@@ -1,0 +1,36 @@
+{
+  "name": "car-type",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "year": {
+      "type": "string",
+      "required": true
+    },
+    "model-name": {
+      "type": "string",
+      "required": true
+    },
+    "total-inventry": {
+      "type": "string",
+      "required": true
+    },
+    "manfacturer": {
+      "type": "string",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "car": {
+      "type": "belongsTo",
+      "model": "car-type",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}

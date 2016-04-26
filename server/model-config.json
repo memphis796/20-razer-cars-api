@@ -36,5 +36,13 @@
   "end-user": {
     "dataSource": "db",
     "public": true
+  },
+  "car-type": {
+    "dataSource": "db",
+    "public": true
+  },
+  "inventory-history": {
+    "dataSource": "db",
+    "public": true
   }
 }

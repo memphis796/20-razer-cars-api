@@ -1,0 +1,28 @@
+{
+  "name": "inventory-history",
+  "base": "PersistedModel",
+  "idInjection": true,
+  "options": {
+    "validateUpsert": true
+  },
+  "properties": {
+    "checkOut": {
+      "type": "number",
+      "required": true
+    },
+    "checkIn": {
+      "type": "number",
+      "required": true
+    }
+  },
+  "validations": [],
+  "relations": {
+    "number": {
+      "type": "hasMany",
+      "model": "inventory-history",
+      "foreignKey": ""
+    }
+  },
+  "acls": [],
+  "methods": {}
+}
